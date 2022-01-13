@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae738f63c611d4a43883ea348f23f206, type: 3}
+  m_Name: EventBusModuleEvents
+  m_EditorClassIdentifier: 
+  usings:
+  - System.Linq
+  events:
+  - name: EventBusModuleDemoEvents
+    _namespace: XvoleR.EventBusModule.Demo
+    prefix: 
+    description: 
+    eventNames:
+    - name: ScoreChangedEvent
+      singleton: 1
+      parameters: []
+      description: 
+    - name: ScoreChangerEvent
+      singleton: 1
+      parameters:
+      - name: Difference
+        type: int
+      description: 
+    - name: ScoreRequestEvent
+      singleton: 1
+      parameters: []
+      description: 
